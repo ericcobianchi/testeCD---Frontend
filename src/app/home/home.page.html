@@ -3,30 +3,34 @@
     <ion-title class="title" center>Ranking</ion-title>
     <ion-grid>
       <ion-row>
-        <ion-col>
+        <ion-col size-md="2" offset-md="2">
           <div>Posição</div>
         </ion-col>
-        <ion-col>
+        <ion-col size-md="2" offset-md="2">
           <div>
             Nome
           </div>
         </ion-col>
-        <ion-col>
+        <ion-col size-md="2" offset-md="2">
           <div class="ion-text-start">
             Mortes
           </div>
         </ion-col>
       </ion-row>
-      <ion-row *ngFor="let position of ranking; let i = index">
-        <ion-col>
+      <ion-row
+        *ngFor="let position of ranking; let i = index"
+        size-md="6"
+        offset-md="3"
+      >
+        <ion-col size-md="2" offset-md="2">
           <div>{{ i + 1 }}°</div>
         </ion-col>
-        <ion-col>
+        <ion-col size-md="2" offset-md="2">
           <div class="ion-text-start">
             {{ position[0] }}
           </div>
         </ion-col>
-        <ion-col>
+        <ion-col size-md="2" offset-md="2">
           <div class="ion-text-start">
             {{ position[1] }}
           </div>
